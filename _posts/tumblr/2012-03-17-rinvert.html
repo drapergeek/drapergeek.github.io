@@ -1,0 +1,22 @@
+---
+layout: post
+title: Rinvert
+tags: 
+---
+<p><img src="http://media.tumblr.com/tumblr_m0sonuflLu1r91fem.png"/></p>
+<p>In case you&#8217;re not aware, <a href="https://github.com/tpope/vim-rails">rails.vim</a> is great.  One of the commands that I just found out about is Rinvert.  If you&#8217;re working on a migration such as:</p>
+<pre>class AddAwesomeColumnsToAwesomeTable &lt; ActiveRecord::Migration
+  def change
+    add_column :awesome_people, :awesome_level, :integer
+    add_column :awesome_people, :awesome_explanation, :string
+  end
+  
+  def down
+  end
+end
+
+</pre>
+<p>and you get to the down migration, you&#8217;re welcome to begin typing out the commands to drop the columns, however if you simply highlight the up method and call:</p>
+<pre>:Rinvert</pre>
+<p>all the magic will be done for you!  Rails.vim will read what you&#8217;re doing and add the appropriate drops.  If the migration is too complicated for it, it will add what it can and then mark it with an irreversible migration exception which then you can take out and change the more complicated stuff by hand.</p>
+<p>Please note, in the newer versions of rails you can simply use change instead of up and down but there are times this won&#8217;t work.  Even when it does, legacy code unfortunately still exists so this command can come in very handy.</p>

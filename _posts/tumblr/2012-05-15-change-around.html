@@ -1,0 +1,13 @@
+---
+layout: post
+title: Change Around
+tags: 
+---
+<p>For a while now I&#8217;ve been using the change inside command.  If you simply hit:</p>
+<pre>ci</pre>
+<p>while inside a set of &#8220;blocks&#8221;(in this case a block can be single-quotes, double-quotes, parens, square braces, etc), vim will remove all the text inside that block and you are automatically put in to insert mode to replace the text.  This is an awesome command.  Today I learned another offset command, the change around command!</p>
+<p>Lets say you have text that is just like this:</p>
+<pre>output = 'Jason'</pre>
+<p>and you want to replace the string with a reference to a variable called name.  Normally I would probably go to the first single quote and just delete till the other quote however there is a better way!  You can simply hit:</p>
+<pre>ca</pre>
+<p>which stands for &#8216;change around&#8217; and vim will remove the entire &#8216;block&#8217; including the quotes and you can just type your variable name!  How hot is that?</p>

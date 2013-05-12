@@ -1,0 +1,15 @@
+---
+layout: post
+title: Relative Copy in vim
+tags:
+- vim
+---
+<p>It surprises me that I&#8217;ve not found or used this before!</p>
+
+<p>In vim, you can use relative line numbers to copy and paste code(it can actually be used for other commands as well but I stick to one command at a time).  Using this command:</p>
+<pre>:-5t.</pre>
+<p>Will copy the line of code that is 5 lines above your current cursor to your current position.</p>
+<p>This line:</p>
+<pre>:-10, -8 t.</pre>
+<p>Will copy from 10 lines above your cursor to 8 lines above your cursor and put it to your current position.</p>
+<p>This is incredibly handy when trying to rearrange text and prevents you from needing to move to the line you need to copy, only to move back to where you need to paste it.</p>

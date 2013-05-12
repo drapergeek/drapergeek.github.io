@@ -1,0 +1,9 @@
+---
+layout: post
+title: Migration Alias
+tags: 
+---
+<p>One thing I don&#8217;t do that I know I should, is validate that my down migration works properly.  I also always seem to forget to migrate my test database after I&#8217;ve set up a migration.  To help me out with this, I set up a simple alias to take care of both of these problems.  This is what I have in my zsh aliases:</p>
+<pre>alias rdb='rake db:migrate &amp;&amp; rake db:migrate:redo &amp;&amp; rake db:test:prepare'
+</pre>
+<p>This allows me, with one command, to migrate to the new version, pull back the migration, run it again and make sure that my test database is set up and ready.</p>

@@ -1,0 +1,9 @@
+---
+layout: post
+title: vim git blame
+tags: 
+---
+<p><img src="http://media.tumblr.com/tumblr_m0so4ya9Lt1r91fem.png"/></p>
+<p>Often when working on a project in git, you may want to be able to quickly see made the code addition that you&#8217;re working on.  If you&#8217;re in vim this is simple.  Add the command below to your vimrc file:</p>
+<pre>vmap b :!git blame =expand("%:p")  \| sed -n =line("',=line("'&gt;") p </pre>
+<p>Now if you highlight any section of code and  then press Leader+b, git will show you who edited the lines of code.</p>
