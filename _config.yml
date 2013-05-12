@@ -4,9 +4,9 @@ permalink: /posts/:title
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Jason Draper
+url: http://drapergeek.com
+description: web developer / geek
+twitter: drapergeek
+github: drapergeek
+gravatar_url: http://www.gravatar.com/avatar/620e689d6045838491aa0f2a4d4b2004.png 
