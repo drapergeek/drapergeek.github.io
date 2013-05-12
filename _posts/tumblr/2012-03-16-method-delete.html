@@ -1,0 +1,13 @@
+---
+layout: post
+title: ! 'method: :delete'
+tags: 
+---
+<p><img src="http://media.tumblr.com/tumblr_m0sos5ndEV1r91fem.png"/></p>
+<p>I&#8217;m sure we&#8217;ve all seen the following code before:</p>
+<p>&lt;%= link_to &#8220;Destroy&#8221;, my_object, method: :delete %&gt;</p>
+<p>minus the new hash calls in 1.9.2, this is a pretty standard delete link rails.  Here&#8217;s the issue though, links can&#8217;t make actually delete requests so how does this work exactly?</p>
+<p>What rails is doing, is on the fly, if you&#8217;ve added this method, its actually makes your application execute a javascript function when clicked that then creates a delete request on the server side so that the routes work properly.  The only downside to this is that if your users don&#8217;t have javascript running, this links fails epically.  If you have users who don&#8217;t use javascript you basically have two options:</p>
+<ul><li>Use button_to, this will create a whole form which actually allows the delete request and does not require javascript</li>
+<li>Ignore those users.  They&#8217;re weird anyway</li>
+</ul><p>Personally, I&#8217;d opt for two but the choice is yours.  Either way, you should be aware of what you are presenting to users.</p>

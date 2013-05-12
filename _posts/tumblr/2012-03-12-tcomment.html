@@ -1,0 +1,17 @@
+---
+layout: post
+title: tcomment
+tags: 
+---
+<p><img src="http://media.tumblr.com/tumblr_m0so5ezcXw1r91fem.png"/></p>
+<p>When working with code, there are plenty of times you want to comment out large sections of code.  I do this a lot when refactoring or going through a new codebase.  There are plenty of tricks in vim for commenting out blocks of code however they may operate differently based on the language you&#8217;re working in.  The best way I&#8217;ve found to comment multiple lines is <a href="https://github.com/tomtom/tcomment_vim" title="tcomment">tcomment</a>.  This little vim plugin allows you to comment out large blocks of code in almost any language.  Once you&#8217;ve set it up (I use <a href="https://github.com/tpope/vim-pathogen">pathogen</a>), you can use the command:</p>
+<pre>:TComment</pre>
+<p>after highlighting a section of text and like magic, its all commented out.  The only time that I&#8217;ve ran into issues is when I&#8217;m editing a rails html.erb file and I wish to comment out a section of html.  In that case I use the command:</p>
+<pre>:TComment As html</pre>
+<p>because tcomment assumes that I am working in ruby.  This will only provide html comments, the ruby inside would still be executed.</p>
+<p>I added the two lines below to my vimrc file.  This gives me the ability to simply highlight the text and then use &lt;Leader&gt;cc to comment out ruby or &lt;Leader&gt;ch to comment out html blocks in a rails file.</p>
+<pre>"map over the tcomment command
+map cc :TComment
+"This does tcomment for html
+map ch :TCommentAs html
+</pre>
