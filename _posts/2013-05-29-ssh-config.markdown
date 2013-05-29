@@ -15,6 +15,7 @@ Host staging
   User deployer
   Port 3333
 ```
+
 With a simple config file, we can specify an alternate port (handy to avoid people banging on the door all the time), a hostname and a port. Now we can simply call `ssh staging` and it all works perfectly. Compare that to `ssh deployer@staging.example.com -p 3333` and this file becomes nearly magical!
 
 To find more information just check out the [manpage](http://linux.die.net/man/5/ssh_config).
