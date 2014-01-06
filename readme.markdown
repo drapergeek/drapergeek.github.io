@@ -1,20 +1,12 @@
-# Left
+# My Blog
 
-Left is a clean, whitespace-happy layout for [Jekyll](https://github.com/mojombo/jekyll).
-
-This is designed to be an easy layout to modify for your own blog. It was
-extracted from [zachholman.com](http://zachholman.com/), which means it was
-battle-hardened from years of posting serious blog posts about emoji and swear
-words.
-
-![Left](http://cl.ly/image/3S2r1p2C0E2B/content)
-
-## Installation
+## Usage
 
 - Install Jekyll: `gem install jekyll`
-- [Fork this repository](https://github.com/holman/left/fork)
-- Clone it: `git clone https://github.com/YOUR-USER/left`
-- Run the jekyll server: `jekyll --server`
+- Run the jekyll server: `jekyll serve -w`
+
+### Creating new posts
+- `ruby new_post.rb 'POST NAME'`
 
 You should have a server up and running locally at <http://localhost:4000>.
 
@@ -36,15 +28,6 @@ There's a few other places that you'll want to change, too:
 - [apple-touch-icon.png](https://github.com/holman/left/blob/master/apple-touch-icon.png):
   Again, this is my gravatar, and it shows up in iOS and various other apps
   that use this file as an "icon" for your site.
-
-## Deployment
-
-You should deploy with [GitHub Pages](http://pages.github.com)- it's just
-easier.
-
-All you should have to do is rename your repository on GitHub to be
-`username.github.com`. Since everything is on the `gh-pages` branch, you
-should be able to see your new site at <http://username.github.com>.
 
 ## Licensing
 
