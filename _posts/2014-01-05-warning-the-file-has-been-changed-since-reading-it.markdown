@@ -2,6 +2,7 @@
 layout: post
 title: 'WARNING: The file has been changed since reading it!'
 published: true
+tags: vim
 ---
 
 Papercuts, hitting your pinky toe and that message have to rank among the most
