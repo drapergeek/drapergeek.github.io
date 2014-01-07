@@ -1,0 +1,35 @@
+---
+layout: post
+title: repeat
+published: true
+tags: zsh
+---
+
+This is a simple command I learned a while back. If you use zsh and want to run
+a command multiple times, you can simply use the `repeat` command.
+
+I have a problem in my test suite currently, there are a few specs that will
+intermittently fail when I run the entire suite. This is a really big pain to
+investigate because it requires running the entire suite multiple times.
+Fortunately using the repeat command made it much easier. I done some work on
+the test suite to try and resolve the issues, then I simply fire up a shell and
+run:
+
+```
+  repeat 10 bundle exec rake
+```
+
+and then I go grab some more coffee! The test suite is fairly quick (about 2
+minutes) so I can just let it run. After the suite has ran 10 times, if I don't
+have any failures, I can feel fairly confident I've fixed the issue.
+
+The repeat command takes a number as the first argument and then the rest of the
+command as the rest of the arguments. An example of running a single spec 200
+times would be:
+
+```
+ repeat 200 rspec spec/models/idea_spec.rb:25
+```
+
+Repeat is a great tool to have in your chest anytime you want to do the same
+thing multiple times.
