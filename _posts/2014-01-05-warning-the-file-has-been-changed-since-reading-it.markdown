@@ -5,7 +5,7 @@ published: true
 tags: vim
 ---
 
-Papercuts, hitting your pinky toe and that message have to rank among the most
+Papercuts, hitting your pinky toe, and that message have to rank among the most
 annoying things that can happen to a human being!
 
 Here is a simple trick that can cut down on how often you see that
