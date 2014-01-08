@@ -1,0 +1,26 @@
+---
+layout: post
+title: r unin=in
+published: true
+tags: zsh
+---
+
+Here is a quick ZSH trick I learned from my awesome coworker [Gabe
+Berke-Williams](http://gabebw.com/). In ZSH, you can re-run your last command
+using r.
+
+```
+bundle install
+r #=> bundle install
+```
+
+This isn't terribly help until you find out that you can perform some basic
+substitution on your command. How about the following scenario? You've
+upgraded postgres and need to reinstall the gem.
+
+```
+gem uninstall pg
+r unin=in #=> gem install pg
+```
+
+It is a small trick but can come in handy.
