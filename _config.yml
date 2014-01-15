@@ -10,3 +10,9 @@ description: web developer / geek
 twitter: drapergeek
 github: drapergeek
 gravatar_url: http://www.gravatar.com/avatar/620e689d6045838491aa0f2a4d4b2004.png 
+likes:
+  - { name: Ruby, link: 'http://www.ruby-lang.org/' }
+  - { name: Rails, link: 'http://www.rubyonrails.org/' }
+  - { name: EmberJS, link: 'http://www.emberjs.com/' }
+  - { name: VIM, link: 'http://www.vim.org/' }
+

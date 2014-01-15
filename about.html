@@ -3,9 +3,15 @@ layout: layout
 title: "About"
 ---
 
-<!-- You can edit this whole page, remove it, or use it as basis for any non-post pages you have. -->
 <section class="content">
   <h1>{{ site.name }}</h1>
-
-  <p>This would be an excellent time to update this page and talk about yourself a bit.</p>
+  <ul>
+    <li>I work at <a href='http://thoughtbot.com'>thoughtbot</a></li>
+    {% for like in site.likes %}
+      <li>I like <a href='{{ like.link }}'>{{ like.name }}</a></li>
+    {% endfor %}
+    <li>I like <a href='https://www.ruby-lang.org/en/'>Ruby</a> & <a href='http://rubyonrails.org/'>Rails</a></li>
+    <li>I like <a href='http://emberjs.com/'>EmberJS</a></li>
+    <li>I like good tools that make my job easier and my users happy.</li>
+  </ul>
 </section>
