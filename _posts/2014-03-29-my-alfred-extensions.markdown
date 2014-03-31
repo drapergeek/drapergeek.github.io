@@ -10,8 +10,7 @@ I decided to do the same. Here is my current setup.
 
 Extensions:
 
-* [Omnifocus](https://github.com/drapergeek/alfred-omnifocus) - I use a plugin I wrote to quickly add items to my omnifocus list.
-  Nothing special, it just drops it in the inbox and sends a notification.
+* [Omnifocus](https://files.app.net/2zwm2acCb) - I use a plugin that [Gordon Fontenot](https://twitter.com/gfontenot) wrote to quickly add items to my omnifocus list.
 * [Dash](https://github.com/zenorocha/alfred-workflows/tree/master/dash) - For documentation
 * [Day One Log](https://github.com/drapergeek/alred-dayone) - I like being able to quickly add entries to day one. This is a
   quick script I put together to use the command line.
