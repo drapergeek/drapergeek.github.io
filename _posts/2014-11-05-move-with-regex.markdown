@@ -12,7 +12,7 @@ mv ~/app/models/builder.rb ~/app/services/builder.rb
 ```
 
 For years now, this is how I moved my files. Then I paired with a coworker who
-gave me a strange look when I done this move. In ZSH there is a faster way to
+gave me a strange look when I ran this command. In ZSH there is a faster way to
 make this change:
 
 ```
