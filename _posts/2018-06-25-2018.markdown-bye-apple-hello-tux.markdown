@@ -1,0 +1,8 @@
+---
+layout: post
+title: Bye Apple, Hello Tux
+external_url: https://robots.thoughtbot.com/bye-apple-hello-tux
+external_site: thoughtbot
+tags: ruby
+published: true
+---
